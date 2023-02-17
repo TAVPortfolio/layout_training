@@ -1,3 +1,5 @@
+/* main styles */
+
 *,
 *::after,
 *::before {
@@ -17,6 +19,8 @@ a {
   color: inherit;
   display: inline-block;
 }
+
+/* header '.header' */
 
 .header {
   background: url(../images/header-bg.jpg) top center/cover no-repeat;
@@ -88,4 +92,145 @@ a {
   position: absolute;
   right: 0;
   bottom: -270px;
+}
+
+/* section '.services' */
+
+.services {
+  padding-top: 350px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #21062a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  height: 3px;
+  background-color: #21062a;
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  margin-left: 20px;
+}
+
+.services__inner {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.services__content {
+  max-width: 505px;
+  margin-right: 96px;
+}
+
+.services__content-title {
+  color: #5a0d67;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+
+.services__content-textbox {
+  margin-bottom: 57px;
+}
+
+.services__content-text {
+  margin-bottom: 12px;
+}
+
+.button--decor {
+  margin-top: -7px;
+  color: #fff;
+  border: 1px solid #5a0d67;
+  position: relative;
+}
+
+.button--decor::before {
+  content: '';
+  position: absolute;
+  background-color: #c4c4c4;
+  height: 2px;
+  width: 80px;
+  right: -70px;
+  top: 24px;
+  transition: all 0.4s;
+}
+
+.button--decor::after {
+  content: 'тисни';
+  position: absolute;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  margin-left: 130px;
+  transition: all 0.6s;
+}
+
+.button--decor:hover::after {
+  color: #5a0d67;
+}
+.button--decor:hover::before {
+  background-color: #5a0d67;
+}
+
+.services__list {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+.services__item {
+  counter-increment: my-counter;
+  border: 2px solid #c4c4c4;
+  margin-bottom: 12px;
+  width: 450px;
+  padding: 10px 15px 10px 113px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.services__item::before {
+  content: '0' counter(my-counter);
+  position: absolute;
+  left: 20px;
+  color: #c4c4c4;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  top: 16px;
+  transform: rotate(-90deg);
+}
+
+.services__item:hover {
+  border: 2px solid #5a0d67;
+  width: 500px;
+}
+
+.services__item:hover .services__item-title {
+  color: #5a0d67;
+}
+
+.services__item:hover::before {
+  color: #5a0d67;
+  transition: all 0.4s;
+}
+
+.services__item-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2c2b2b;
+}
+.services__item-text {
+  font-weight: 300;
+  line-height: 27px;
+  color: #2c2b2b;
 }
