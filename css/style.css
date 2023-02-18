@@ -133,7 +133,6 @@ a {
 .services__content-title {
   color: #5a0d67;
   font-weight: 300;
-  line-height: 27px;
   margin-bottom: 12px;
 }
 
@@ -231,7 +230,6 @@ a {
 }
 .services__item-text {
   font-weight: 300;
-  line-height: 27px;
   color: #2c2b2b;
 }
 
@@ -283,4 +281,63 @@ a {
 
 .benefits__item-text {
   color: #c4c4c4;
+}
+
+/* section '.carousel' */
+
+.carousel {
+  margin-bottom: 100px;
+}
+
+.carousel__inner {
+  margin: 0 -7px;
+}
+
+.corousel__item {
+  margin: 0 7px;
+}
+
+.corousel__item-box {
+  border: 1px solid #c4c4c4;
+  padding: 6px 6px 16px 6px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.corousel__item-box:hover {
+  color: #fff;
+  background-color: #5a0d67;
+  border: 1px solid #5a0d67;
+}
+
+.corousel__item-img {
+  max-width: 100%;
+  margin-bottom: 23px;
+}
+
+.corousel__item-title {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.carousel .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.carousel .slick-dots button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+  margin: 0 18px;
+  background-color: #c4c4c4;
+  width: 50px;
+  height: 2px;
+}
+
+.carousel .slick-active button {
+  background-color: #5a0d67;
+  height: 3px;
 }
