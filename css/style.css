@@ -409,3 +409,30 @@ a {
   margin-top: 78px;
   cursor: pointer;
 }
+
+/* footer '.footer' */
+.footer {
+  background-color: #21062a;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 100px;
+}
+.logo {
+}
+.logo__img {
+}
+.social {
+}
+.footer__social {
+}
+.social__link {
+}
+.social__img {
+}
+.footer__copy {
+}
